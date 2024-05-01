@@ -6,3 +6,5 @@ An example of English text tone detection with [Hugging Face](https://huggingfac
 
 
 Tests GitHub Actions
+
+**Приложение переводит текст с английского на русский и русского на английский**
