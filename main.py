@@ -1,16 +1,14 @@
 from fastapi import FastAPI
-from transformers import pipeline
 from pydantic import BaseModel
+from transformers import pipeline
 
 
 class Item(BaseModel):
-    text: str
-
+    text: str  # уменьшила количество пробелов
 
 
 app = FastAPI()
-classifier = pipeline("sentiment-analysis")
-
+classifier = pipeline("sentiment-analysis")  # Уменьшила количество пробелов
 
 
 @app.get("/")
